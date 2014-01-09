@@ -134,7 +134,7 @@ static ffim_status FFI_HIDDEN ffi_mini_prep_cif_core(ffim_cif *cif, ffim_abi abi
   cif->flags = 0;
 
 #if HAVE_LONG_DOUBLE_VARIANT
-  ffi_prep_types (abi);
+  ffi_mini_prep_types (abi);
 #endif
 
   /* Initialize the return type if necessary */
